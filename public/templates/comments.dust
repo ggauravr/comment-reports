@@ -1,0 +1,18 @@
+<html lang="en-US">
+<head>
+    <title>Notes</title>
+</head>
+<body>
+<div id="page-container">
+	{#data}
+		<p>{type}</p>
+		{#content}
+			{file}
+			{#list}
+				<p>{.}</p>
+			{/list}
+		{/content}
+	{/data}
+</div>
+</body>
+</html>
