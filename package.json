@@ -1,0 +1,31 @@
+{
+  "name": "test-reports",
+  "version": "0.0.1",
+  "description": "Export mocha tests into a readable html and pdf reports",
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.12.6"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "keywords": [
+    "unit-tests",
+    "reports",
+    "behavior"
+  ],
+  "author": "Gaurav Ramesh",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-dustjs": "^1.2.1",
+    "grunt-mocha-cli": "^1.14.0"
+  },
+  "dependencies": {
+    "dustjs-linkedin": "^2.7.2",
+    "walkfs": "^0.1.2"
+  }
+}
