@@ -66,7 +66,7 @@ var _extract = function(filePath, contents){
 };
 
 _init();
-walkfs('./src')
+walkfs('.')
     .on('file', function(entry){
         var filePath    = entry.path,
             extension   = path.extname(filePath),

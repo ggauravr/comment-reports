@@ -32,6 +32,7 @@ module.exports = function(grunt){
                 }],
                 options: {
                     fullname: function(filepath) {
+                        // [[TODO]] remove hard-coded index, handle it better
                         var dirName = path.dirname(filepath).split(path.sep).slice(2).join(path.sep),
                             templateName =  (dirName ? (dirName + path.sep) : '') + path.basename(filepath, '.dust');
                         console.log("dirname" + templateName);
