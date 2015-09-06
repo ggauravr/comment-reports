@@ -5,12 +5,22 @@
 <body>
 <div id="page-container">
 	{#data}
-		<p>{type}</p>
-		{#content}
-			{file}
-			{#list}
-				<p>{.}</p>
-			{/list}
+		{?content}
+			<section>
+				<h5 class="sh_1">{type}</h5>
+				<ul>
+					{#content}
+                        <li>
+							<h6 class="sh_2">{file}</h6>
+							<ul>
+								{#list}
+									<li><span class="line_number">{lineNumber}</span><span class="line">{line}</span></li>
+								{/list}
+							</ul>
+						</li>
+					{/content}
+				</ul>
+			</section>
 		{/content}
 	{/data}
 </div>

@@ -10,7 +10,7 @@ module.exports = {
         singleLine: {
             begin   : '\\[\\[{TYPE}\\]\\]'
         }
-        //  TODO: add multi-line support
+        //  [[TODO]] add multi-line support
 
     }
 };
